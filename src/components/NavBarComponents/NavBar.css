@@ -1,0 +1,24 @@
+.navbar-div{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.navbar-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.navbar-brand-name{
+    margin-right: 25px;
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-right div{
+    margin: 8px;
+}
