@@ -1,8 +1,17 @@
 .navbar-div{
     display: flex;
     justify-content: space-between;
+    margin: 20px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
 
+}
+.brand-name-image{
+    height: 27px;
+    width: 130px;
 }
 .navbar-left{
     display: flex;
@@ -14,6 +23,7 @@
     margin-right: 25px;
     cursor: pointer;
 }
+
 .navbar-right{
     display: flex;
     justify-content: space-between;
@@ -21,4 +31,57 @@
 }
 .navbar-right div{
     margin: 8px;
+}
+.dropdown{
+    height: 44px;
+    padding:0px 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 159, 127);
+    border: 0.8px solid rgb(229, 231, 235);
+    cursor: pointer;
+}
+.dropdown::selection{
+    border: none;
+}
+.dropdown option{
+    background-color: white;
+   padding: 15px;
+   cursor: pointer;
+}
+.page-dropdown{
+    border: none;
+    font-size: 17px;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.page-dropdown option{
+background-color: transparent;
+   color: black;
+   appearance: none;
+   cursor: pointer;
+}
+.button{
+    height: 36px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 159, 127);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.89;
+}
+.button:hover{
+    opacity: 1;
+    transition: all 0.2s;
 }

@@ -1,22 +1,26 @@
 import React from "react";
-import './NavBar.css'
+import "./NavBar.css";
 const NavBar = () => {
   return (
     <div className="navbar-div">
-        {/* left */}
+      {/* left */}
       <div className="navbar-left">
         <div className="navbar-brand-name">
-          <h2>PickBazar</h2>
+          <img
+            className="brand-name-image"
+            src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F2295%2FLogo-new.png&w=1920&q=75"
+          />
         </div>
         <div>
-          <select>
-            <option>Mens</option>
-            <option>Womens</option>
-            <option>Groceries</option>
+          <select className="dropdown">
+            <option>👖 Mens</option>
+            <option>👗 Womens</option>
+            <option>🥕 Groceries</option>
+            <option>📱 Smart Phones</option>
           </select>
         </div>
       </div>
-    {/* Right */}
+      {/* Right */}
       <div className="navbar-right">
         <div>
           <p>Shop</p>
@@ -25,18 +29,21 @@ const NavBar = () => {
           <p>Offers</p>
         </div>
         <div>
-            <p>Contact</p>
+          <p>Contact</p>
+        </div>
+
+        <div>
+          <select className="page-dropdown">
+            <option>Pages</option>
+            <option>About US</option>
+            <option>FAQ</option>
+          </select>
         </div>
         <div>
-            <select>
-                <option>Pages</option>
-            </select>
+          <button className="button">Join</button>
         </div>
         <div>
-            <button>JOIN</button>
-        </div>
-        <div>
-            <button>Become a Seller</button>
+          <button className="button">Become a Seller</button>
         </div>
       </div>
     </div>
