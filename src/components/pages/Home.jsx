@@ -16,10 +16,10 @@ const Home = () => {
           Ready to wear dresses tailored for you online. Hurry up while stock
           lasts.
         </p>
-        <div>
+        <div className="search-div-input-button">
           <input className="search-bar" type="search" placeholder="Search your products from here" />
           <button className="search-button">
-            <IoSearchOutline /> <span>Search</span>
+            <IoSearchOutline   className="search-icon"/> <span>Search</span>
           </button>
         </div>
       </div>

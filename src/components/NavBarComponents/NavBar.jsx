@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-const NavBar = () => {
+const NavBar = ({setCategory}) => {
   return (
     <div className="navbar-div">
       {/* left */}
@@ -12,11 +12,12 @@ const NavBar = () => {
           />
         </div>
         <div>
-          <select className="dropdown">
-            <option>👖 Mens</option>
-            <option>👗 Womens</option>
-            <option>🥕 Groceries</option>
-            <option>📱 Smart Phones</option>
+          <select className="dropdown" onChange={(e)=>setCategory(e.target.value)}>
+            <option value={'mens-shirts'}>👚 Mens Shirts</option>
+            <option value={'womens-dresses'}>👗 Womens Dresses</option>
+            <option value={'groceries'}>🥕 Groceries</option>
+            <option value={'smartphones'}>📱 Smart Phones</option>
+            <option value={'tops'}>👕 Tops</option>
           </select>
         </div>
       </div>
@@ -33,7 +34,7 @@ const NavBar = () => {
         </div>
 
         <div>
-          <select className="page-dropdown">
+          <select className="page-dropdown" >
             <option>Pages</option>
             <option>About US</option>
             <option>FAQ</option>
