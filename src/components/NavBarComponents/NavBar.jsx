@@ -1,8 +1,30 @@
-import React from "react";
+import React,{useState} from "react";
 import "./NavBar.css";
+import { FiSearch } from "react-icons/fi";
 const NavBar = ({setCategory}) => {
+  const [color,setColor] = useState(false)
+  const [searchIcon,setSearchIcon] = useState(false)
+  function changeColor(){
+    if(window.scrollY>90){
+      setColor(true)
+    }
+    else{
+      setColor(false)
+    }
+  }
+
+  function showSearchIcon(){
+    if(window.scrollY>340){
+      setSearchIcon(true)
+    }
+    else{
+      setSearchIcon(false)
+    }
+  }
+  window.addEventListener("scroll",changeColor)
+  window.addEventListener("scroll",showSearchIcon)
   return (
-    <div className="navbar-div">
+    <div className={`navbar-div ${color ? 'scrolled' : ''}`} >
       {/* left */}
       <div className="navbar-left">
         <div className="navbar-brand-name">
@@ -13,6 +35,7 @@ const NavBar = ({setCategory}) => {
         </div>
         <div>
           <select className="dropdown" onChange={(e)=>setCategory(e.target.value)}>
+            <option value={''}>👔 All</option>
             <option value={'mens-shirts'}>👚 Mens Shirts</option>
             <option value={'womens-dresses'}>👗 Womens Dresses</option>
             <option value={'groceries'}>🥕 Groceries</option>
@@ -40,6 +63,7 @@ const NavBar = ({setCategory}) => {
             <option>FAQ</option>
           </select>
         </div>
+       {searchIcon && <button  className={searchIcon ? ` search-icon-button ` : ''}><FiSearch className="icon" size={15}/></button>} 
         <div>
           <button className="button">Join</button>
         </div>

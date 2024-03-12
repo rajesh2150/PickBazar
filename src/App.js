@@ -5,7 +5,7 @@ import Home from './components/pages/Home';
 import ProductList from './components/pages/ProductList';
 
 function App() {
-  const [category,setCategory] = useState()
+  const [category,setCategory] = useState('')
   return (
     <div className="App">
       

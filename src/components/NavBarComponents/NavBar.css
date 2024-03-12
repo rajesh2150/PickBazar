@@ -1,13 +1,22 @@
 .navbar-div{
     display: flex;
     justify-content: space-between;
-    margin: 20px 25px;
+    /* margin: 0pxpx; */
+    padding: 5px 25px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 84px;
+    z-index: 500;
+    transition: all 0.2s;
 
 
+
+}
+.scrolled{
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.208) ;
 }
 .brand-name-image{
     height: 27px;
@@ -30,7 +39,12 @@
     align-items: center;
 }
 .navbar-right div{
-    margin: 8px;
+    margin: 12px;
+    
+}
+.navbar-right div:hover{
+    cursor: pointer;
+    color: rgb(0, 159, 127);
 }
 .dropdown{
     height: 44px;
@@ -50,6 +64,19 @@
     background-color: white;
    padding: 15px;
    cursor: pointer;
+}
+.search-icon-button{
+    
+    background-color: white;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 0.2px solid rgba(0, 0, 0, 0.16);
+    
+}
+
+.icon{
+    padding-top: 3px;
 }
 .page-dropdown{
     border: none;

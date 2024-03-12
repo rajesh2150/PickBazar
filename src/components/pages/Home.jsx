@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import { IoSearchOutline } from "react-icons/io5";
 const Home = () => {
+
   return (
     <div>
       <div className="s">

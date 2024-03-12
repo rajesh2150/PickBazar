@@ -39,6 +39,9 @@
 }
 .product-price-buy-container{
     display: flex;
+    flex-direction: row;
+    justify-items: center;
     justify-content: space-between;
+    align-items: center;
     
 }
