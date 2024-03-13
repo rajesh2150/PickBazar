@@ -15,6 +15,9 @@
     
    
 }
+.product-container:hover{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.211);
+}
 .product-image-container{
     height: 256px;
     width: 334px;
@@ -34,14 +37,33 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     padding: 24px;
 }
 .product-price-buy-container{
     display: flex;
-    flex-direction: row;
-    justify-items: center;
     justify-content: space-between;
-    align-items: center;
+    padding: 24px;   
+}
+.strike-price{
+    margin-left: 5px;
+}
+.add-button{
+    height: 36px;
+    width: 36px;
+    font-weight: 400;
+    padding-top: 3px;
+    background-color: white;
+    border: 0.8px solid rgb(229, 231, 235);
+    border-radius: 5px;
+    color: rgb(0, 159, 127);
+}
+
+.add-button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 159, 127);
+    color: white;
+    transition: all 0.2s;
+
     
 }

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ProductList.css";
+import { IoMdAdd } from "react-icons/io";
+
 const ProductList = ({ category }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -22,12 +24,12 @@ const ProductList = ({ category }) => {
           <div className="product-image-container">
             <img className="product-image" src={product.images[0]} />
           </div>
-          <div className="product-description-container">
-            <p>{product.title}</p>
-            <div className="product-price-buy-container">
-              <b>${product.price}</b>
-              <button>+</button>
-            </div>
+
+          <p>{product.title}</p>
+
+          <div className="product-price-buy-container">
+           <span><b>${product.price}</b><s className="strike-price">${product.price*2}</s></span> 
+            <button className="add-button"><IoMdAdd className="add-icon" size={17}/></button>
           </div>
         </div>
       ))}
