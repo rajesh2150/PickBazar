@@ -12,7 +12,7 @@ function App() {
       
       <NavBar setCategory={setCategory}/>
       <Home/>
-      <ProductFilterComponents category={category} />
+      <ProductFilterComponents setCategory={setCategory} category={category} />
     </div>
   );
 }

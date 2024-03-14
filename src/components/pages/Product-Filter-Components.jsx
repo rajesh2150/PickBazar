@@ -2,10 +2,10 @@ import React from 'react'
 import ProductList from './ProductList'
 import Filter from './Filter'
 
-const ProductFilterComponents = ({category}) => {
+const ProductFilterComponents = ({category,setCategory}) => {
   return (
     <div>
-        {/* <Filter/> */}
+        <Filter setCategory={setCategory}/>
         <ProductList category={category}/>
       
     </div>

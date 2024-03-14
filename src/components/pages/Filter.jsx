@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+const Filter = ({setCategory}) => {
+  const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://dummyjson.com/products/categories")
+      .then((res) => setCategories(res.data));
+  }, []);
+ 
 
-const Filter = () => {
   return (
     <div>
-        <select>
-            <option>Women Dress</option>
-        </select>
-        <select>
-            <option>Outer Wear</option>
-        </select>
+      <select onChange={(e)=>setCategory(e.target.value)}>
+        {categories?.map((category) => (
+          <option >{category}</option>
+        ))}
+      </select>
     </div>
-  )
-}
+  );
+};
 
-export default Filter
+export default Filter;
