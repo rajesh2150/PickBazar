@@ -3,9 +3,13 @@ import ProductList from './ProductList'
 import Filter from './Filter'
 
 const ProductFilterComponents = ({category,setCategory}) => {
+  
+
   return (
-    <div>
+    <div >
+      <div style={{marginRight:50}}>
         <Filter setCategory={setCategory}/>
+      </div>
         <ProductList category={category}/>
       
     </div>
@@ -13,3 +17,4 @@ const ProductFilterComponents = ({category,setCategory}) => {
 }
 
 export default ProductFilterComponents
+

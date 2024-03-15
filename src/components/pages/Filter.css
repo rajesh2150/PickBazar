@@ -1,0 +1,15 @@
+.dropdown-container{
+    height: 220px;
+    width: 130px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top:100vh ;
+    margin-right: 50px;
+    
+}
+.sticky{
+    position: sticky;
+    left: 0;
+    top:150px ;
+}
