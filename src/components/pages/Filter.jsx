@@ -11,7 +11,7 @@ const Filter = ({setCategory}) => {
  
 const [sticky,setSticky] = useState(false)
   function handleSticky(){
-   if(window.scrollY>780){
+   if(window.scrollY>643){
       setSticky(true)
    }
    else{
@@ -31,14 +31,14 @@ const [sticky,setSticky] = useState(false)
        <p>{categories[5]}</p>
        <p>{categories[6]}</p>
        <p>{categories[7]}</p>
-       <select>
+       <select className="dropdown">
         <option>Mens</option>
         <option>mens-shirts</option>
-        <option>"mens-shoes</option>
+        <option>mens-shoes</option>
         <option>mens-watches</option>
        </select>
 
-       <select>
+       <select className="dropdown">
         <option>Women</option>
         <option>womens-shoes</option>
         <option>womens-dresses</option>

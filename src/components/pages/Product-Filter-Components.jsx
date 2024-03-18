@@ -7,10 +7,13 @@ const ProductFilterComponents = ({category,setCategory}) => {
 
   return (
     <div >
-      <div style={{marginRight:50}}>
+      <div >
         <Filter setCategory={setCategory}/>
       </div>
+      <div style={{marginLeft:55}}>
+
         <ProductList category={category}/>
+      </div>
       
     </div>
   )

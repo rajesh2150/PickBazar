@@ -25,7 +25,7 @@ const ProductList = ({ category }) => {
             <img className="product-image" src={product.images[0]} />
           </div>
 
-          <p>{product.title}</p>
+          <p className="product-title">{product.title}</p>
 
           <div className="product-price-buy-container">
            <span><b>${product.price}</b><s className="strike-price">${product.price*2}</s></span> 
