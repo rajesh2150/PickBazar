@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ProductList.css";
 import { IoMdAdd } from "react-icons/io";
-
+import {useNavigate} from 'react-router-dom'
 const ProductList = ({ category }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -16,7 +16,12 @@ const ProductList = ({ category }) => {
             .then((res) => setProducts(res.data.products));
     }
   }, [category]);
-
+//showProducts
+const history=useNavigate()
+  const handleShowProduct=(productId)=>{
+    console.log(productId)
+    history(`product/${productId}`)
+  }
   return (
     <div className="product-list-container">
       {products?.map((product, index) => (
@@ -29,7 +34,7 @@ const ProductList = ({ category }) => {
 
           <div className="product-price-buy-container">
            <span><b>${product.price}</b><s className="strike-price">${product.price*2}</s></span> 
-            <button className="add-button"><IoMdAdd className="add-icon" size={17}/></button>
+            <button onClick={()=>handleShowProduct(product.id)} className="add-button"><IoMdAdd className="add-icon" size={17}/></button>
           </div>
         </div>
       ))}
