@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PickBazar/static/css/main.01399c61.css",
+    "main.js": "/PickBazar/static/js/main.75119f2b.js",
+    "static/js/453.21df47b8.chunk.js": "/PickBazar/static/js/453.21df47b8.chunk.js",
+    "index.html": "/PickBazar/index.html",
+    "main.01399c61.css.map": "/PickBazar/static/css/main.01399c61.css.map",
+    "main.75119f2b.js.map": "/PickBazar/static/js/main.75119f2b.js.map",
+    "453.21df47b8.chunk.js.map": "/PickBazar/static/js/453.21df47b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01399c61.css",
+    "static/js/main.75119f2b.js"
+  ]
+}
